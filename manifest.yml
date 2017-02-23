@@ -1,0 +1,8 @@
+---
+applications:
+- name: bookstore-war
+  memory: 512M
+  host: bookstore-war
+  domain: mybluemix.net
+  services:
+  - dashDB for Analytics-uj

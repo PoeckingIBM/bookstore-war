@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Register Test</title>
+</head>
+<body>
+	<form action="register" method="post">
+	<fieldset>
+	<legend>Registrieren</legend>
+	<table>
+		<tbody>
+		<tr>
+			<th>
+				<label for="email">Email:</label>
+			</th>
+			<td>
+				<input 
+					type="email"
+					name="email"
+					size="40"
+					maxlength="40"
+					title="example@example.com"
+					placeholder="type mail"
+					pattern=".{6,40}" 
+					required="required">
+			</td>
+		</tr>
+		<tr>
+			<th>
+				<label for="password">
+					Password:
+				</label>
+			</th>
+			<td>
+				<input 
+					type="password" 
+					name="password"
+					size="10"
+					maxlength="10"
+					title="6-10 character"
+					placeholder="type password"
+					pattern=".{6,10}" 
+					required="required">
+			</td>
+		</tr>
+		<tr>
+			<td/><td>
+				<input type="submit"> 		
+				<input type="reset"> 		
+			</td>
+		</tr>
+	</tbody>
+	</table>
+	</fieldset>
+
+	</form>
+</body>
+</html>
