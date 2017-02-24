@@ -3,6 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>bookstore-war</groupId>
 	<artifactId>bookstore-war</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
@@ -14,11 +15,32 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<configuration>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+						<warName>JavaCloudantApp</warName>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>net.wasdev.wlp.maven.plugins</groupId>
+					<artifactId>liberty-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 		<plugins>
 			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.0.0</version>
+				<groupId>net.wasdev.wlp.maven.plugins</groupId>
+				<artifactId>liberty-maven-plugin</artifactId>
+				<configuration>
+					<configFile>src/main/wlp/server.xml</configFile>
+					<bootstrapProperties>
+						<appLocation>../../../../../${project.build.finalName}</appLocation>
+					</bootstrapProperties>
+				</configuration>
 			</plugin>
 		</plugins>
-	</build>
 </project>
