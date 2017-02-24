@@ -22,7 +22,7 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<configuration>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<warName>JavaCloudantApp</warName>
+						<warName>bookstore-war</warName>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -43,4 +43,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
+	</build>
 </project>
