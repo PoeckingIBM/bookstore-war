@@ -1,7 +1,7 @@
 ---
 applications:
-  path: target/bookstore-war.war
-- name: bookstore-war
+- path: target/bookstore-war.war
+  name: bookstore-war
   memory: 512M
   host: bookstore-war
   domain: mybluemix.net
