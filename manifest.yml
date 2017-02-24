@@ -1,4 +1,3 @@
----
 applications:
 - path: target/bookstore-war.war
   name: bookstore-war
