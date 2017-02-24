@@ -50,7 +50,8 @@ public class RegisterServlet extends HttpServlet {
 		em.persist(newUser);
 		em.getTransaction().commit();
 		
-		response.getWriter().append(newUser.toString());
+		if (em.contains(newUser))
+				response.getWriter().append(newUser.toString());
 	}
 
 }
