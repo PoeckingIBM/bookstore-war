@@ -35,4 +35,11 @@
 			</plugin>
 		</plugins>
 	</build>
+	<parent>
+		<groupId>net.wasdev.maven.parent</groupId>
+		<artifactId>java7-parent</artifactId>
+		<version>1.4</version>
+	</parent>
+	<name>Liberty Profile Sample - Servlet</name>
+	<url>https://wasdev.github.io</url>
 </project>
