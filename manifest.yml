@@ -1,3 +1,4 @@
+---
 applications:
 - path: target/bookstore-war.war
   name: bookstore-war
@@ -6,3 +7,6 @@ applications:
   domain: mybluemix.net
   services:
   - dashDB for Analytics-uj
+  - availability-monitoring-auto
+  instances: 1
+  buildpack: liberty-for-java
